@@ -1,4 +1,4 @@
-# Webrtc Demo
+# Webrtc Opencv Demo
 
 为结合opencv与webrtc使用，基于upd、aiortc、pyav、opencv-python 封装了一些代码。
 
