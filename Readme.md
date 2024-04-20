@@ -8,7 +8,8 @@
 
 ## 服务端使用
 
-在`import RtcServer`后即可通过RtcServer建立一个服务器对象。该服务器对象开放了一个端口如`port=20000`用于实现与客户端交换SDP。同时该服务器对象需要传入一个摄像机捕获对象，此摄像机捕获对象需存在一个子方法`get_latest_frame`，该子方法返回一个元组：`tuple[ret，frame]`  ，其中` ret`为一个`bool`类型变量，`frame`为CV2格式的图像。
+在`import RtcServer`后即可通过RtcServer建立一个服务器对象。该服务器对象开放了一个端口如`port=20000`用于实现与客户端交换SDP。
+同时该服务器对象需要传入一个摄像机捕获对象，此摄像机捕获对象需存在一个子方法`get_latest_frame`，该子方法返回一个元组：`tuple[ret，frame]`  ，其中` ret`为一个`bool`类型变量，`frame`为CV2下RGB格式的图像。
 
 示例如下：
 
